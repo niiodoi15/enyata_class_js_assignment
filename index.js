@@ -5,23 +5,22 @@ class student {
         this.score = score;
         this.course = course;
     }
-    getname = () => {
+    name() {
         return this.name;
     };
-    getage = () => {
+    age() {
+        return this.age;
+    };
+    increaseAge() {
         this.age += 1
         return this.age;
     };
-    getcourse = () => {
+    addCourse()  {
         this.course = this.course.push(course);
         return this.course;
-    };
-    getscore = () => {
-        return this.score;
     };
 }
 
 const steve = new student('Steven', 12, 70, ['math', 'english', 'science']);
 console.log(steve.course.push('history'));
 console.log(steve);
-
