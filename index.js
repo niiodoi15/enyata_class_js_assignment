@@ -15,12 +15,11 @@ class student {
         this.age += 1
         return this.age;
     };
-    addCourse()  {
-        this.course = this.course.push(course);
+    addCourse(courses)  {
+        this.course = this.course.push(courses);
         return this.course;
     };
 }
 
 const steve = new student('Steven', 12, 70, ['math', 'english', 'science']);
-console.log(steve.course.push('history'));
 console.log(steve);
